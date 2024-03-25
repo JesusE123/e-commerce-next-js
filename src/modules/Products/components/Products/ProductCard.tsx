@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { AlertDemo } from '@/components/Alert/Alert';
+import Link from 'next/link';
 
    
 
@@ -48,7 +49,7 @@ const ProductCard = ({title,price,description,image, addProductCart, id}:Product
           {price}$
         </CardContent>
         <CardFooter className="flex justify-between">
-          <Button variant="secondary">Read more</Button>
+          <Link href={`/products/${id}`} className='text-white hover:text-gray-400'>Read more</Link>
           <Button onClick={handleAddToCart} className='hover:bg-slate-400'>Add to cart</Button>
         </CardFooter>
         {showAlert && <AlertDemo />}

@@ -22,9 +22,9 @@ export default function RootLayout({
     <Providers>
     <html lang="en">
       <body className={`${inter.className} bg-gray-950`}>
-        <Navbar /> {/* Agrega tu componente de navbar */}
+        <Navbar /> 
         {children}
-        <Footer /> {/* Agrega tu componente de footer */}
+        <Footer /> 
       </body>
     </html>
   </Providers>
